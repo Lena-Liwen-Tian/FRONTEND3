@@ -57,7 +57,7 @@ toast.configure();
 
 
  async function handleToken(token){
- const response = await axios.post('https://pumpkinphasethree.herokuapp.com/cart',{token,product});
+ const response = await axios.post('https://pumpkinphasethree.herokuapp.com/api/cart',{token,product});
  const {status} = response.data
  if(status === 'success'){
    toast("Success! Check email for details!",{type:"success"});

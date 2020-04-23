@@ -17,7 +17,7 @@ const[have,sethave] = useState(true);
        const fetchTheatre = async () => {
         setisLoading(true);
         try{          
-          const response= await fetch(`https://pumpkinphasethree.herokuapp.com/${theaterId}`); 
+          const response= await fetch(`https://pumpkinphasethree.herokuapp.com/api/theatres/${theaterId}`); 
           const responseData = await response.json();
           
           if(!response.ok){
